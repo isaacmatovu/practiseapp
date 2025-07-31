@@ -40,6 +40,20 @@ const TabLayout = () => {
           ),
         }}
       />
+
+      <Tabs.Screen
+        name="operations"
+        options={{
+          title: "operations",
+          tabBarIcon: ({ focused, color }) => (
+            <AntDesign
+              name={focused ? "checkcircle" : "checkcircleo"}
+              size={30}
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 };

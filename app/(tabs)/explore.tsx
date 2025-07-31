@@ -1,5 +1,6 @@
 import React from "react";
 import { FlatList, Image, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import MenuImages from "../components/MenuImages";
 import { MenuItems } from "../components/MenuItems";
 
@@ -15,7 +16,7 @@ const footerComp = (
 
 const Explore = () => {
   return (
-    <View>
+    <SafeAreaView>
       <FlatList
         data={MenuItems}
         showsVerticalScrollIndicator={false}
@@ -43,7 +44,7 @@ const Explore = () => {
           </View>
         )}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
