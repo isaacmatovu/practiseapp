@@ -11,9 +11,9 @@ const Button = (props: Props) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      className="bg-green-500 px-8 py-4 rounded-lg border-2 border-blue-400"
+      className="bg-green-500 w-16 h-12 justify-center items-center rounded-lg border-2 border-blue-400"
     >
-      <Text className="text-white">{text}</Text>
+      <Text className="text-white text-sm">{text}</Text>
     </TouchableOpacity>
   );
 };
